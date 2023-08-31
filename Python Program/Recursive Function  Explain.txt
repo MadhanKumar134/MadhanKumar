@@ -1,0 +1,56 @@
+Recursive Function :
+
+Recursive funtion its call its self 
+
+base case ==> Terminating From recursive 
+Recursive ==> Calling itself
+
+
+
+program :											
+
+def fact (n):
+    if (n==0)or(n==1):
+        return 1
+    else:
+        return n*fact(n-1)
+n=int(input("Enter a Value : "))
+res=fact(n)
+print("Fact:",res)
+
+
+
+Explain :
+
+5*fact (4)=5*24=120
+4*fact (3)=4*6=24
+3*fact (2)=3*2=6
+2*fact (1)=2*1=2
+fact(1)=1
+
+
+
+
+2. Sum of Digits 
+
+n=1234 ==> 1+2+3+4=10
+
+program :
+
+def sod(n):
+	if n==0:
+		return=0
+	else:
+		return n%10 + sod(n//10)
+n= int (input("Enter the Value :"))
+res=sod(n)
+print("Sum of digits:",res)
+
+
+explain :
+
+1234%10 +sod(1234//10)=4+sod(123)=4+6=10
+123%10 +sod(123//10)=3+sod(12)=3+3=6
+12%10 +sod(12//10)=2+sod(1)=1+2=3
+1%10 +sod(1//10)=1+sod(0)=1
+0 
